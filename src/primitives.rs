@@ -28,6 +28,7 @@ cfg_if! {
             target_os = "watchos",
             target_os = "visionos",
         )),
+        not(target_os = "redox"),
         not(target_os = "vita"),
         any(
             target_arch = "aarch64",
